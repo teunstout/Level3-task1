@@ -6,10 +6,10 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgUpload"
         android:layout_width="414dp"
         android:layout_height="175dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btnGallery"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/ic_collections_black_24dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnGallery"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:text="OPEN PICTURE GALLARY"
@@ -25,7 +25,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imgUpload" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -37,10 +37,10 @@
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button">
+        app:layout_constraintTop_toBottomOf="@+id/btnGallery">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textInputEditText1"
+            android:id="@+id/txtInName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="hint" />
@@ -60,6 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtInSurename"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="hint" />
@@ -72,19 +73,20 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/btnDone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtInDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="hint" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnDone"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"

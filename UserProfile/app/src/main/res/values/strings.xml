@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">User Profile</string>
     <string name="txtSplashField">User Profile Kotlin</string>
+    <string name="txtInName">Name</string>
+    <string name="txtInSurename">Surename</string>
+    <string name="txtInDescription">description</string>
 </resources>
