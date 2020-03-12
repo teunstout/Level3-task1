@@ -1,6 +1,9 @@
 package com.example.userprofile
 
+import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_profile.*
@@ -28,5 +31,19 @@ class CreateProfileActivity : AppCompatActivity() {
         startActivityForResult(galleryIntent, GALLERY_REQUEST_CODE)
     }
 
+    private var profileImageUri: Uri? = null
+
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (resultCode == Activity.RESULT_OK) {
+            when (requestCode) {
+                GALLERY_REQUEST_CODE -> {
+                    profileImageUri = data?.data
+                    imgUpload.setImageURI(profileImageUri)
+                }
+            }
+        }
+    }
 
 }
