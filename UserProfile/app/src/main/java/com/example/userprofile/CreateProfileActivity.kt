@@ -1,6 +1,5 @@
 package com.example.userprofile
 
-import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.net.Uri
@@ -16,7 +15,25 @@ class CreateProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
+        initViews()
+    }
+
+    private fun initViews() {
         btnGallery.setOnClickListener { onGalleryClick() }
+        btnConfirm.setOnClickListener { onConfirmClick() }
+    }
+
+    private fun onConfirmClick() {
+        val profile = Profile(
+            txtInName.text.toString(),
+            txtInSurname.text.toString(),
+            txtInDescription.text.toString(),
+            profileImageUri
+        )
+
+        val profileActivityIntent = Intent(this, ProfileActivity::class.java)
+        profileActivityIntent.putExtra(ProfileActivity.PROFILE_EXTRA, profile)
+        startActivity(profileActivityIntent)
     }
 
 
