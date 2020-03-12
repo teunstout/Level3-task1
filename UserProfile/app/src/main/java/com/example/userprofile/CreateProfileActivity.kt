@@ -1,8 +1,8 @@
-package com.example.userprofile
-
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.userprofile.R
 import kotlinx.android.synthetic.main.activity_profile.*
 
 const val GALLERY_REQUEST_CODE = 100
