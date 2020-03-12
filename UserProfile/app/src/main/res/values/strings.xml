@@ -13,4 +13,10 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="confirmButtonText">Confirm</string>
+    <string name="textGallaryButton">OPEN PICTURE GALLARY</string>
+    <string name="textName">Name</string>
+    <string name="textSurname">Surname</string>
+    <string name="textDescription">Description</string>
+    <string name="textUpload">Upload</string>
 </resources>
