@@ -11,5 +11,3 @@ data class Profile(
     val description: String,
     val img: Uri?
 ) : Parcelable
-{
-}

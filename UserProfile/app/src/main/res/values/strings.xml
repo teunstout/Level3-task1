@@ -4,8 +4,18 @@
     <string name="txtInName">Name</string>
     <string name="txtInSurename">Surename</string>
     <string name="txtInDescription">description</string>
-    <string name="title_activity_create_profile">CreateProfileActivity</string>
 
+    <string name="confirmButtonText">Confirm</string>
+    <string name="textGallaryButton">OPEN PICTURE GALLARY</string>
+    <string name="textName">Name</string>
+    <string name="textSurname">Surname</string>
+    <string name="textDescription">Description</string>
+    <string name="textUpload">Upload</string>
+    <string name="name">%1$s %2$s</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="title_activity_create_profile">CreateProfileActivity</string>
+    <string name="title_activity_profile">This is your profile</string>
 
 
 </resources>
