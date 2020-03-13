@@ -13,10 +13,12 @@ class ProfileActivity: AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile_personolized)
+        setSupportActionBar(toolbar)
         initViews()
     }
 
     private fun initViews() {
+
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.title = "This is your profile!"
 

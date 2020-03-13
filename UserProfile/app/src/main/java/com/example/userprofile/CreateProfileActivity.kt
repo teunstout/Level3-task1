@@ -31,8 +31,9 @@ class CreateProfileActivity : AppCompatActivity() {
             profileImageUri
         )
 
-        val profileActivityIntent = Intent(this, ProfileActivity::class.java)
-        profileActivityIntent.putExtra(ProfileActivity.PROFILE_EXTRA, profile)
+        val profileActivityIntent =
+            Intent(this, ProfileActivity::class.java)
+                .putExtra(ProfileActivity.PROFILE_EXTRA, profile)
         startActivity(profileActivityIntent)
     }
 

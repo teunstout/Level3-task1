@@ -7,7 +7,7 @@
     tools:context=".ProfileActivity">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/ToolbarPerProfile"
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay"
@@ -32,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ToolbarPerProfile"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <TextView
