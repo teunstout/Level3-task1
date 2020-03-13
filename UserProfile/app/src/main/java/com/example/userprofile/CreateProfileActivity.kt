@@ -33,7 +33,7 @@ class CreateProfileActivity : AppCompatActivity() {
 
         val profileActivityIntent =
             Intent(this, ProfileActivity::class.java)
-                .putExtra(ProfileActivity.PROFILE_EXTRA, profile)
+                .putExtra(PROFILE_EXTRA, profile)
         startActivity(profileActivityIntent)
     }
 
