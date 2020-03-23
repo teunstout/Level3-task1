@@ -14,16 +14,16 @@ class ProfileActivity: AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile_personolized)
         setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = "This is your profile!"
+
         initViews()
     }
 
     private fun initViews() {
+        val profile = intent.getParcelableExtra<Profile>(PROFILE_EXTRA) // get intent data
 
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.title = "This is your profile!"
-
-        val profile = intent.getParcelableExtra<Profile>(PROFILE_EXTRA)
-
+        // put data in the view
         if (profile != null) {
             titlePerProfile.text = getString(R.string.name, profile.name, profile.surname)
             disPerProfile.text = profile.description
@@ -31,6 +31,9 @@ class ProfileActivity: AppCompatActivity(){
         }
     }
 
+    /**
+     * when clicked on back button go back
+     */
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         return when (item?.itemId) {
             android.R.id.home -> {
@@ -40,6 +43,4 @@ class ProfileActivity: AppCompatActivity(){
             else -> return super.onOptionsItemSelected(item)
         }
     }
-
-
 }

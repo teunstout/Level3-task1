@@ -13,6 +13,10 @@
     <string name="textUpload">Upload</string>
     <string name="name">%1$s %2$s</string>
 
+<!--  Toast messages -->
+    <string name="fillInName">Fill in your name!</string>
+    <string name="fillInSurname">Fill in your surname!</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="title_activity_create_profile">CreateProfileActivity</string>
     <string name="title_activity_profile">This is your profile</string>
